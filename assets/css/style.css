@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --primary-color: rgb(13, 106, 134);
+    --primary-color-darker: rgb(12, 87, 110);
+    --gray-disabled: rgb(89, 101, 110);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Orbitron', sans-serif ;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+input:focus {
+    outline: 2px solid var(--primary-color);
+    border: none;
+}
+
+button {
+    border: none;
+    font-family: 'Orbitron';
+    text-transform: uppercase;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow:1px 1px 7px var(--primary-color);
+}
+
+button:hover {
+    background-color: var(--primary-color-darker);
+}
+
+button:active {
+    background-color: var(--primary-color-darker);
+}
+
+button[disabled]{
+    background-color: var(--gray-disabled);
+    cursor: not-allowed;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.stopwatch {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-top: 70px;
+    text-shadow: 1px 1px 7px var(--primary-color);
+}
