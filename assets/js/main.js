@@ -4,8 +4,8 @@ const pause = document.querySelector('.pause');
 const reset = document.querySelector('.reset');
 const stopwatch = {
     hour: 0,
-    minutes: 59,
-    seconds: 55
+    minutes: 0,
+    seconds: 0
 }
 
 let loop = null;
