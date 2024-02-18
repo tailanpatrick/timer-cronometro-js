@@ -1,3 +1,4 @@
+function safeScope(){
 const relogio = document.querySelector('.stopwatch');
 const start = document.querySelector('.start');
 const pause = document.querySelector('.pause');
@@ -79,4 +80,6 @@ function updateTimer(timer){
     relogio.innerHTML = `${hour}:${minutes}:${seconds}`;
 }
 
+}
 
+safeScope();
