@@ -4,8 +4,8 @@ const pause = document.querySelector('.pause');
 const reset = document.querySelector('.reset');
 const stopwatch = {
     hour: 0,
-    minutes: 0,
-    seconds: 0
+    minutes: 59,
+    seconds: 55
 }
 
 let loop = null;
@@ -15,6 +15,7 @@ start.addEventListener('click', ()=>{
     start.disabled = true
     start.innerText = 'Iniciar'
     pause.disabled = false;
+    reset.disabled = false;
     relogio.style.color = 'var(--primary-color)'
 });
 
@@ -24,6 +25,7 @@ reset.addEventListener('click', () => {
     start.innerText = 'Iniciar'
     start.disabled = false;
     pause.disabled = true;
+    reset.disabled = true;
     relogio.style.color = 'var(--primary-color)'
 });
 
